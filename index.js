@@ -11,14 +11,10 @@ increaseBtn.addEventListener('click', function() {
 })
 
 resetBtn.addEventListener('click', function() {
-countertext.innerHTML = 0
+    counter = 0
+    countertext.innerHTML = 0
 })
 
 closeAppBtn.addEventListener('click', function() {
     window. close()
 })
-
-
-// window. close()
-
-
