@@ -1,7 +1,7 @@
-let increaseBtn = document.querySelector('.increase-value')
-let resetBtn = document.querySelector('.reset-value')
-let closeAppBtn = document.querySelector('.close-app')
-let countertext = document.querySelector('.value')
+let increaseBtn = document.querySelector('.js-increase-value')
+let resetBtn = document.querySelector('.js-reset-value')
+let closeAppBtn = document.querySelector('.js-close-app')
+let countertext = document.querySelector('.js-value')
 counter = 0
 
 
