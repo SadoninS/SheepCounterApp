@@ -6,7 +6,7 @@ const COUNTER_VALUE = document.querySelector('.js-value')
 const COUNTER_INITIAL_VALUE = 0
 
 let counter = COUNTER_INITIAL_VALUE
-
+COUNTER_VALUE.innerHTML = 0
 
 INCREASE_BTN.addEventListener('click', function() {
     counter = counter + 1
