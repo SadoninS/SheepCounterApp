@@ -1,20 +1,23 @@
-let increaseBtn = document.querySelector('.js-increase-value')
-let resetBtn = document.querySelector('.js-reset-value')
-let closeAppBtn = document.querySelector('.js-close-app')
-let countertext = document.querySelector('.js-value')
-counter = 0
+const INCREASE_BTN = document.querySelector('.js-increase-value')
+const RESET_BTN = document.querySelector('.js-reset-value')
+const CLOSE_APP_BTN = document.querySelector('.js-close-app')
+const COUNTER_VALUE = document.querySelector('.js-value')
+
+const COUNTER_INITIAL_VALUE = 0
+
+let counter = COUNTER_INITIAL_VALUE
 
 
-increaseBtn.addEventListener('click', function() {
+INCREASE_BTN.addEventListener('click', function() {
     counter = counter + 1
-    countertext.innerHTML = counter
+    COUNTER_VALUE.innerHTML = counter
 })
 
-resetBtn.addEventListener('click', function() {
-    counter = 0
-    countertext.innerHTML = 0
+RESET_BTN.addEventListener('click', function() {
+    counter = COUNTER_INITIAL_VALUE
+    COUNTER_VALUE.innerHTML = 0
 })
 
-closeAppBtn.addEventListener('click', function() {
-    window. close()
+CLOSE_APP_BTN.addEventListener('click', function() {
+    window.close()
 })
